@@ -1,5 +1,5 @@
 
-[Biscoitos-da-Sorte.webm](https://github.com/user-attachments/assets/a6987e66-7f7e-4f85-957c-0ff8f8a7f4cb)
+![Biscoitos-da-Sorte](https://github.com/user-attachments/assets/b5a346f9-2a61-4b55-bcc7-eea8cf849881)
 
 ## 🖥️ Projeto
 
