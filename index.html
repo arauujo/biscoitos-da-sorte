@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jogo de adivinhação.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Biscoitos da Sorte</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="./assets/favicon-16x16.png">
+        <link rel="icon" sizes="32x32" href="./assets/favicon-32x32.png">        
+        <link rel="icon" sizes="192x192" href="./assets/favicon-192x192.png">
+        <link rel="icon" sizes="512x512" href="./assets/favicon-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <section class="one">
+                <h1>Qual é a sua sorte de hoje?</h1>
+                <p>Abra o biscoito e descubra</p>
+                <img id="biscuit" src="./assets/biscoito.svg" alt="Desenho de um biscoito">
+            </section>
+            
+            <section class="two hide">
+                    <h2>Aqui está a sua sorte de hoje:</h2>
+                    <p class="luck-message"></p>
+                    <img id="brokenBiscuit" src="./assets/biscoito-quebrado.svg" alt="Desenho de um biscoito quebrado">
+                    <button id="btnOpenBiscuit">Abrir outro biscoito</button>
+                </section>
+        </main>
+        
+        <script src="./main.js"></script>
+    </body>
+</html>

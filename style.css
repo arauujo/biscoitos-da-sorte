@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-base-white: #FFFFFF;
+    --color-base-purple: #34355B;
+    --color-base-gray: #E4EDF1;
+    --color-base-orange: #FF9500;
+    --color-bg-blue: #190361;
+    --color-bg-pink: #bb00ff;
+    --color-button-hover: #c97807;
+}
+
+body {
+    background: linear-gradient(45deg, var(--color-bg-blue) 0%, var(--color-bg-pink) 100%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+main {
+    max-width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    background-color: var(--color-base-white);
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+h1, h2, p {
+    color: var(--color-base-purple);
+}
+
+h1, h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.one p, button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* section one */
+.one img {
+    margin-top: 2rem;
+    width: 24.9rem;
+}
+
+.one img:hover {
+    cursor: pointer;
+    animation: biscuit .3s infinite ease-in;
+}
+
+.one h1 {
+    width: 25.8rem;
+}
+
+.one p {
+    margin-top: 1.4rem;
+}
+
+/* section two */
+.two h1 {
+    width: 29.7rem;
+}
+
+.luck-message {
+    margin-top: 2.7rem;
+    padding: 1rem;
+    background-color: var(--color-base-gray);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: black;
+    box-shadow: 2px 2px 2px 0 rgb(85, 85, 85, 0.5);
+    animation: luck-message 1s ease-in-out;
+}
+
+.two img {
+    margin: 6rem 0
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    appearance: none;
+    border: none;
+    border-radius: .4rem;
+    padding: 1.6rem;
+    background-color: var(--color-base-orange);
+    font-weight: 700;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-button-hover);
+}
+
+
+/* keyframes */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes biscuit {
+    0% {
+      transform: translate(1px, 1px) rotate(2deg);
+    }
+  
+    20% {
+      transform: translate(2px, 2px) rotate(0deg);
+    }
+  
+    40% {
+      transform: translate(1px, 1px) rotate(2deg);
+    }
+  
+    60% {
+      transform: translate(2px, 2px) rotate(0deg);
+    }
+  
+    80% {
+      transform: translate(1px, 1px) rotate(2deg);
+    }
+  
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+
+@keyframes luck-message {
+    0% {
+        transform: translate(0, 100px) scale(0.5);
+      }
+
+    100% {
+        transform: translate(0, 0) scale (1);
+    }
+}
